@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anime World</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Orbitron',sans-serif;
+    color:white;
+    background:url('anime-bg.png') no-repeat center center fixed;
+    background-size:cover;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.35);
+    z-index:1000;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:35px;
+}
+
+/* 🔥 RESTORED NAV COLORS */
+nav li:nth-child(1) a{color:#ff5bd9;}
+nav li:nth-child(2) a{color:#00d4ff;}
+nav li:nth-child(3) a{color:#65ff84;}
+nav li:nth-child(4) a{color:#ffd700;}
+
+nav a{
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+/* 🔥 HOVER EFFECT BACK */
+nav a:hover{
+    transform:scale(1.1);
+    filter:brightness(1.3);
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.main-title{
+    font-family:'Great Vibes', cursive;
+    font-size:9rem;
+    font-weight:400;
+    background:linear-gradient(90deg,#ff00ff,#ff6b6b,#ffd93d,#00d4ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.sub-title{
+    font-size:2.5rem;
+    margin-top:15px;
+}
+
+/* SECTIONS */
+.section{
+    padding:120px 10%;
+    background:rgba(0,0,0,0.25);
+}
+
+/* ABOUT */
+.section p{
+    line-height:2;
+    max-width:900px;
+}
+
+/* GALLERY */
+.gallery-section{
+    min-height:100vh;
+    padding:120px 10%;
+    background:rgba(0,0,0,0.25);
+    text-align:center;
+}
+
+.gallery-section h2{
+    font-size:4rem;
+    margin-bottom:25px;
+    background:linear-gradient(90deg,#00d4ff,#ff00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    max-width:800px;
+    margin:auto;
+}
+
+/* 🔥 FIXED IMAGE STYLE */
+.gallery img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    object-position:center;
+    border-radius:10px;
+    background:black;
+    transition:0.3s;
+}
+.gallery img:nth-child(4),
+.gallery img:nth-child(5){
+    object-position: 50% 25%;
+}
+
+.gallery img:nth-child(6){
+    object-position: 50% 52%;
+}
+
+}
+
+}
+.gallery img:nth-child(9){
+    object-position: 50% 25% !important;
+}
+
+}
+'
+.gallery img:hover{
+    transform:scale(1.08);
+}
+
+/* CONTACT */
+.section h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div>Anime World ✨</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <h1 class="main-title">
+        Welcome to<br>
+        My Website
+    </h1>
+
+    <h2 class="sub-title">
+        Hello World!
+    </h2>
+
+    <p class="description">
+        A beautiful anime themed website.
+    </p>
+
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! I'm Harshit.
+        I enjoy gaming, watching videos, listening to music,
+        and exploring interesting things on the internet.
+
+        <br><br>
+
+        Minecraft is one of my favorite games, and I love trying
+        out new games whenever I get the chance.
+
+        <br><br>
+
+        Thank you for visiting my website!
+    </p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+
+    <h2>My Gallery</h2>
+
+    <div class="gallery">
+        <img src="gallery/img1.jpg">
+        <img src="gallery/img2.jpg">
+        <img src="gallery/img3.jpg">
+        <img src="gallery/img4.jpg">
+        <img src="gallery/img5.jpg">
+        <img src="gallery/img6.jpg">
+        <img src="gallery/img7.jpg">
+        <img src="gallery/img8.jpg">
+        <img src="gallery/img9.jpg">
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>
+        Email: Idontcare6710@gmail.com
+        <br><br>
+        Discord: atomic_gmr_24088
+    </p>
+</section>
+
+<footer>
+    Made with ❤️
+</footer>
+
+</body>
+</html>
